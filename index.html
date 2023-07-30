@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 text-center" id="header">
+      <h2 class="btn">SOUND CONTROLED ANIMALS</h2>
+    </div>
+
+    <div class="main">
+      <center>
+        <br>
+        <button id="start" class="btn" onclick="startClassification()">Start</button>
+        <br>
+        <lable>Voice decetected of : <span id="result"></span></lable>
+        <br>
+        <lable>Accuracy : <span id="accuracy"></span></lable>
+        <br>
+        <hr>
+        <br>
+        <img id="images" src="ear.jpg">
+      </center>
+    </div>
+
+    <div class="footer">Devloped by : Tejanshi Mahatma</div>
+
+<script src="main.js"></script>
+  </body>
+</html>
